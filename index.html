@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alarm-clock">
+            <div class="clock">
+                <div id="time"></div>
+                <div id="date"></div>
+            </div>
+            <div class="alarm">
+                <input type="time" id="alarmTime" value="08:00">
+                <button onclick="setAlarm()">Set Alarm</button>
+            </div>
+            <div id="alarms"></div>
+        </div>
+        <audio id="alarmSound" src="mixkit-critical-alarm-1004.wav"></audio>
+        <div class="popup" id="alarmPopup">
+            <div class="popup-content">
+                <p>Time to wake up!</p>
+                <button onclick="turnOffAlarm()">Turn Off</button>
+                <button onclick="snoozeAlarm()">Snooze</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

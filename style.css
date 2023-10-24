@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #FFFFFF, #7E57C2, #FF69B4);
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.alarm-clock {
+    text-align: center;
+    color: #7E57C2;
+    padding: 20px;
+}
+
+.clock {
+    font-size: 2.5rem;
+    font: bolder;
+}
+
+#date {
+    font-size: 1rem;
+    color: #FF69B4;
+}
+
+.alarm {
+    margin-top: 20px;
+}
+
+button {
+    padding: 7px 16px;
+    background: #7E57C2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #fffcff;
+    color:#7E57C2; 
+    border: 2px solid #7E57C2;;
+}
+
+.alarm-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #7E57C2;
+    border-radius: 5px;
+}
+
+.alarm-time {
+    flex: 1;
+    font-weight: bold;
+    display: flex; 
+    font-size: 1.3rem; 
+    justify-content: flex-start; 
+    align-items: center;
+    margin-right: 25px;
+}
+
+.alarm-off-button {
+    flex: 0;
+    display: flex;
+    background: #7E57C2;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px; 
+    justify-content: flex-end; 
+    align-items: center; 
+    border-radius: 5px;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.popup button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #7E57C2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background: #c494c0;
+}
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .clock {
+        font-size: 2rem; 
+    }
+    .alarm-time {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+        font-size: 1.5rem;
+    }
+    .alarm-time {
+        font-size: 0.9rem; 
+    }
+}
